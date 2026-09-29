@@ -1,0 +1,68 @@
+ESCAPE THE BUNKER — V5.13 / SALA DE MANUTENÇÃO NO NÍVEL 2
+
+Abrir
+Extraia esta pasta inteira e abra tcc.yyp no GameMaker.
+Esta entrega contém todo o projeto recebido na versão 5.12, com a integração.
+
+Como chegar
+Desça a escadaria até Room_Corredor_N2.
+A nova porta fica no centro da parte inferior do corredor.
+Aproxime-se e pressione E para entrar na sala de manutenção.
+A porta superior direita continua levando à Sala dos Funcionários.
+O atalho de teste P original foi preservado: ao chegar ao corredor do
+Nível 2, caminhe até a porta inferior para testar a nova sala.
+
+Na nova sala
+- O acesso superior esquerdo retorna ao corredor com E.
+- A porta do bloco central abre e fecha com E, pelos dois lados.
+- Ao abrir, o interior fica visível e pode ser percorrido.
+- A porta não fecha sobre a máscara dos pés do jogador.
+- A cobertura permanece removida se a porta for fechada por dentro,
+  permitindo visualizar o jogador e reabrir a porta.
+- O estado aberto/fechado persiste entre visitas na sessão e é
+  reiniciado em um novo jogo.
+
+Arte e proporções
+O cenário aprovado foi integrado como sprite estático em três quadros.
+O boneco da imagem original foi removido. O jogador é Obj_jogador,
+com seus sprites, movimento e inventário originais.
+A room mede 516 x 344 unidades: a escala foi ajustada à altura real
+do personagem da versão 5.12 para conservar a proporção da imagem aprovada.
+A câmera foi ajustada somente nesta sala.
+
+Colisões
+Room_Manutencao_N2 contém 12 instâncias de Obj_parede na camada Colisoes:
+limites externos, bancos e paredes do bloco central.
+A porta central fechada possui mais um Obj_parede, removido ao abrir.
+Os mesmos colisores bloqueiam os pés, balas e cano arremessado.
+Obj_parede agora lê a escala colocada no Room Editor no evento Create;
+os mapas antigos continuam configurando suas dimensões como antes.
+
+Validação executada
+- Estrutura: 129 recursos; 137 arquivos YY/YYP; PNGs, layers e eventos.
+- 9 grupos de testes específicos da sala: geometria navegável com a
+  máscara real dos pés, ida/volta, inventário, porta, pausa, persistência,
+  câmera e bloqueio dos projéteis.
+- 19 testes de colisão existentes passaram.
+- Testes existentes de portas v5.8 e navegação de debug v5.10 passaram.
+- Os primeiros 24 testes gerais de regressão passaram. A suíte completa
+  interrompe no mesmo ponto da versão 5.12 original: ausência do arquivo
+  auxiliar art_sources/menu_diegetico_v44.png. Este arquivo de teste não
+  é um recurso registrado do jogo; os assets de menu foram preservados.
+
+Limite da validação
+Os testes executam trechos de GML em um harness com APIs simuladas e
+verificam arquivos e geometria. Não há GameMaker/Igor neste ambiente.
+Esta versão NÃO foi compilada nem executada no runtime GameMaker aqui.
+Abra tcc.yyp, execute com F5 e confira a apresentação e as interações.
+
+Recursos novos principais
+Room_Manutencao_N2
+Spr_sala_manutencao_cenario
+Spr_acesso_manutencao
+Obj_sala_manutencao_cenario
+Obj_porta_manutencao
+Obj_acesso_manutencao_visual
+
+Comando de validação focal
+node tools/test_manutencao_v513.cjs

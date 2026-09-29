@@ -1,0 +1,16 @@
+{
+  "base": "Escape_The_Bunker_v5_39.zip",
+  "arquivos_alterados": [
+    "objects/Obj_acido/Create_0.gml",
+    "objects/Obj_acido/Step_0.gml",
+    "objects/Obj_barril/Create_0.gml",
+    "objects/Obj_barril/Other_7.gml",
+    "objects/Obj_barril/Step_0.gml",
+    "scripts/Scr_bunker/Scr_bunker.gml",
+    "sprites/Spr_arena_cenario/9c28aa94-7e34-4a63-b0e6-ba67eac4a4c4.png",
+    "sprites/Spr_arena_cenario/layers/9c28aa94-7e34-4a63-b0e6-ba67eac4a4c4/225125ef-2924-4f53-b6bb-0b9b26b277eb.png",
+    "tools/test_regressions.cjs"
+  ],
+  "arquivos_removidos": [],
+  "sprites_do_jogador_e_boss": "Idênticos aos da base enviada"
+}

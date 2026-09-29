@@ -1,0 +1,38 @@
+VALIDAÇÃO V5.21 — 2026-09-19
+
+PASSOU: python tools/validate_project.py
+161 recursos referenciados; 169 arquivos YY/YYP lidos; PNGs principais e layers
+presentes; referências de áudio e 39 quadros de portas conferidos.
+
+PASSOU: node tools/test_recepcao_v521.cjs — 8 verificações
+Room e sprites estáticos, colisões, chegada, conversa, evidência 02, portas,
+projéteis e câmera da recepção.
+
+PASSOU: node tools/test_final_temporario_v521.cjs — 7 verificações
+Fim automático na escadaria, trava de progressão/interfaces, E opcional,
+P durante créditos, avanço pelas salas 10/8/11, restauração da descida pela
+configuração, rolagem dos créditos e retorno ao menu.
+
+PASSOU: node tools/test_debug_room_loop_v510.cjs — 1 verificação composta
+Ciclo P de 11 salas e entradas pela arena/escadaria, preservando inventário.
+
+PASSOU: node tools/test_regressions.cjs — 33 verificações
+Áudio, menus, progressão, inventário, NPCs, combate e interface existentes.
+
+PASSOU: node tools/test_collisions.cjs — 19 verificações
+Armas, cano, paredes, máscaras, propósitos dos colisores e caminhos das salas.
+
+PASSOU: node tools/test_salas8_11_v520.cjs — 15 verificações
+Depósito, esforço, cadáver, cartão, reflexão, emboscada, fuga, laboratório,
+inimigos, inspeções e persistência durante a partida.
+
+PASSOU: node tools/test_dialogos_v519.cjs — 9 verificações
+Caixa original de diálogo, prioridade dos avisos e interfaces da fase 2.
+
+TOTAL: 92 verificações de lógica aprovadas nas sete suítes acima.
+Os testes executam trechos GML com APIs simuladas; NÃO compilam GML e NÃO
+executam o runtime GameMaker VM/YYC. Não há GameMaker instalado no ambiente.
+Prévia conferida com os sprites e posições reais: PREVIA_RECEPCAO_V5_21.png.
+Esta prévia não é uma captura do jogo executando.
+Testes históricos de outras versões continuam arquivados; as suítes acima
+são as selecionadas para os comportamentos alterados nesta entrega.

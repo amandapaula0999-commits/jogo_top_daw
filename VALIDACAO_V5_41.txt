@@ -1,0 +1,7 @@
+Resultado: 6 grupos de testes simulados do corredor passaram.
+Estrutura: 173 recursos, 15 rooms, 260 instâncias; 181 YY/YYP.
+Sem compilação/runtime GameMaker disponível.
+Arquivos existentes alterados:
+rooms/Room_Corredor_N2/Room_Corredor_N2.yy
+sprites/Spr_corredor_n2_cenario/bd893300-4b6c-4703-b63e-238e348d7ac6.png
+sprites/Spr_corredor_n2_cenario/layers/bd893300-4b6c-4703-b63e-238e348d7ac6/07a13b61-f61d-43a7-884c-787ae4756202.png

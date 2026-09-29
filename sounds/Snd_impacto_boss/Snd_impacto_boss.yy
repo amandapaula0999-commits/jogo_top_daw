@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Snd_impacto_boss",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":2,
+  "compression":1,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.65,
+  "exportDir":"",
+  "name":"Snd_impacto_boss",
+  "parent":{
+    "name":"Audio",
+    "path":"folders/Audio.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Snd_impacto_boss.wav",
+  "volume":1.0,
+}

@@ -1,0 +1,63 @@
+ESCAPE THE BUNKER — V5.20 — LABORATÓRIO E DEPÓSITO
+
+PROJETO COMPLETO
+Extraia toda a pasta e abra tcc.yyp no GameMaker.
+Base integral: v5.19, que já padronizou os diálogos da fase 2 com a caixa da
+recepcionista. Os documentos antigos são históricos; este descreve a v5.20.
+
+COMO CHEGAR À SALA 11
+1. Desça a escadaria para o corredor da fase 2.
+2. Na sala de descanso, recolha as chaves na caixinha da parede.
+3. Entre na Sala 10, pela porta central superior. Examine e recolha o pé de cabra.
+4. A porta do Depósito/Sala 8 fica à esquerda da Sala 10, na parede superior.
+5. Dentro do depósito, aproxime-se da porta da câmara fria à direita. Aperte E
+   para iniciar o esforço e siga a sequência E, Espaço, E, Espaço mostrada na
+   caixa. Cada etapa tem cerca de 1,5 s a 60 FPS; errar ou usar ESC cancela e
+   permite tentar novamente. É necessário ter o pé de cabra.
+6. Leia a descoberta do corpo, entre na câmara e recolha o Cartão de Acesso
+   com E. Espaço avança cada trecho da reflexão.
+7. O ruído ocorre ao terminar a reflexão. Ao sair da câmara, o homem-lagarto
+   bloqueia a saída principal. Derrote-o ou alcance o duto na parede esquerda
+   e aperte E para fugir. O cartão continua guardado em qualquer alternativa.
+8. De volta ao corredor, a Sala 11 é a porta superior mais à esquerda, além
+   da porta do Depósito. Use E; o Cartão de Acesso libera a entrada.
+
+SALA 11 — LABORATÓRIO
+- Quatro cápsulas de incubação: formigas, caracóis, lagartos e cobras.
+- Bancadas, terminal e paredes com colisões Obj_parede colocadas na Room.
+- Dois homens-lagarto e um caracol hostis. Usam os sprites pré-carregados;
+  o caracol reutiliza a arte de inimigo que já existia no projeto.
+- Perseguição contorna obstáculos. O ataque tem um aviso antes do dano.
+  Bala e cano acertam os novos inimigos; paredes e cápsulas bloqueiam impactos.
+- Aproxime-se da lateral interna de cada cápsula e aperte E. O terminal fica
+  na parede superior, ao centro. Cada leitura tem duas páginas com Espaço.
+- Textos questionam uso em confrontos e criação de raças meio-humanas, sem
+  apresentar essas hipóteses como fatos confirmados. A pesquisa com cobras
+  menciona um exemplar adulto na contenção profunda: pista do chefe final.
+- As leituras e os inimigos derrotados são lembrados durante a partida.
+- A porta inferior permite retornar ao corredor, inclusive durante o combate.
+
+ARTE E INTERFACE
+Os novos cenários são PNGs importados como sprites, posicionados nas Rooms.
+Cápsulas, espécimes e móveis fazem parte do sprite estático do laboratório.
+Corpo, cartão, porta da câmara e inimigos são objetos com sprites importados.
+Nenhum objeto visual novo possui evento Draw/Draw GUI ou geração de arte
+durante o jogo. As falas reutilizam a caixa e a fonte existentes da parte 1.
+O jogador e suas animações originais foram preservados.
+PREVIA_*_V5_20.png são composições dos sprites/coordenadas para conferência;
+não são capturas de execução do GameMaker.
+
+ESTADO E LIMITES
+O cartão, a câmara e os resultados dos encontros sobrevivem à troca de Room
+e ao reinício no checkpoint durante a partida. Novo jogo limpa esses estados.
+Esta entrega segue o sistema de progresso já existente; não adiciona um novo
+sistema de salvar/carregar a partida completa ao fechar o aplicativo.
+O atalho P continua sendo o ciclo de debug anterior. O caminho normal acima
+é o acesso às novas salas; abrir suas Rooms no editor também permite vê-las.
+
+VALIDAÇÃO
+Confira VALIDACAO_V5_20.txt para os resultados e comandos executados.
+As verificações incluem recursos, PNGs, geometria, portas, sequência narrativa,
+inventário, fuga, combate, pausa e regressões de armas/diálogos.
+NÃO foi possível compilar ou jogar no runtime VM/YYC: não há GameMaker neste
+ambiente. Os testes de lógica usam APIs simuladas e não substituem esse teste.

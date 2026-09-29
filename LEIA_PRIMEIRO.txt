@@ -1,0 +1,26 @@
+ESCAPE THE BUNKER - BASE 5.28 / CORREÇÃO DA TRANSIÇÃO
+
+Extraia o ZIP inteiro em uma pasta nova e abra tcc.yyp.
+
+CORREÇÕES
+- A espera usa viewport completo, ancorado em 0,0, como as demais salas.
+- As margens são calculadas pela câmera; a sala 512 x 384 fica centralizada,
+  com ampliação inteira, sem mover a área de desenho para fora do render target.
+- Câmera fixa nesta cena, sem rastreamento automático nem clamp do jogador.
+- Buffers da sala são limpos; o Draw Begin apaga o fundo anterior em preto.
+- Blocos da queda têm 4 x 4 pixels e compartilham bordas, eliminando a grade.
+
+Arte, cores, colisões, ponto de entrada e destino da queda mantidos.
+Continua na base 5.28, com a Fase 2 e sem a mecânica do Boss cobra.
+
+VALIDAÇÃO
+- test_transicao_espera.cjs: regressão reproduzida na versão anterior;
+  6 verificações aprovadas após o ajuste (quatro resoluções, limpeza e frestas).
+- test_espera_pixel.cjs: início da cena, colisores, explosão, áudio e Sala 1.
+- test_espera_compacta.cjs: entrada, câmera, sombra e escala do cenário.
+- validate_project.py: estrutura de recursos e imagens.
+- ZIP conferido com CRC e comparação do conteúdo de cada arquivo.
+
+A prévia da transição executa os eventos de desenho em um adaptador Canvas,
+usando os sprites reais. Não é captura do GameMaker. Não há GameMaker/Igor
+neste ambiente; a execução nativa precisa ser confirmada no editor.

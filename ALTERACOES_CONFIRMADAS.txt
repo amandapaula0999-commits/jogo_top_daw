@@ -1,0 +1,7 @@
+LEIA_PRIMEIRO.txt
+tools/test_espera_compacta.cjs
+rooms/Room_Armadilha/Room_Armadilha.yy
+objects/Obj_mapa/Obj_mapa.yy
+objects/Obj_mapa/Draw_0.gml
+scripts/Scr_bunker/Scr_bunker.gml
+NOVO: objects/Obj_mapa/Draw_72.gml

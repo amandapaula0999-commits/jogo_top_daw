@@ -1,0 +1,39 @@
+ESCAPE THE BUNKER — V5.16 — CORREDOR DA FASE 2
+
+Extraia a pasta inteira e abra tcc.yyp no GameMaker.
+Projeto completo baseado na v5.15, mantendo descanso e manutenção.
+
+O corredor do nível 2 agora usa a imagem enviada como sprite estático colocado
+na Room_Corredor_N2. O PNG original foi importado sem redesenhar ou alterar a
+arte. O enquadramento remove o excesso de margem externa apenas pela posição
+da instância na Room, preservando as proporções.
+
+O mapa mede 1248 x 330. A câmera acompanha o personagem pelo corredor longo.
+Foram colocadas 13 instâncias de Obj_parede na camada Colisoes_Corredor para
+paredes, caixas e barril. Piso, iluminação e decoração vêm da própria imagem;
+o desenho procedural antigo fica desativado nesta sala.
+
+ACESSOS COM E
+- Parede superior à direita: porta da sala de descanso.
+- Mais à direita da porta de descanso: acesso de volta à escadaria do nível 1.
+- Parede inferior, próxima ao meio: porta da sala de manutenção.
+Os acessos usam sprites do projeto. A porta da escadaria leva à escadaria já
+existente; não foi acrescentada outra sala. Passar perto só exibe o aviso de E.
+
+A chegada pela escadaria e os retornos das duas salas foram reposicionados
+em pontos livres de obstáculos, fora do alcance de reativação das portas.
+Vida, inventário, chaves, checkpoint da escadaria e atalho P foram mantidos.
+
+VERIFICAÇÕES
+- validate_project.py: estrutura de 132 recursos e 140 arquivos YY/YYP.
+- test_corredor_v516.cjs: 6 testes do corredor, acessos, retornos e câmera.
+- test_collisions.cjs: 19 testes, agora carregando também paredes das Rooms.
+- test_manutencao_v513.cjs: 9 testes de manutenção.
+- test_descanso_v515.cjs: 8 testes de descanso.
+- test_debug_room_loop_v510.cjs: ciclo P e novos pontos de chegada.
+- ZIP conferido por CRC e comparação de arquivos com o projeto completo v5.15.
+
+Os testes de lógica executam trechos GML com APIs GameMaker simuladas em Node.js.
+Não substituem a compilação ou um teste jogável: o GameMaker não está instalado
+no ambiente de edição. As verificações acima passaram; não foi executado VM/YYC.
+Os arquivos LEIA_ME anteriores registram o histórico; este descreve a versão atual.

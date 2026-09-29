@@ -1,0 +1,25 @@
+ESCAPE THE BUNKER — V5.22 — PORTAS PADRONIZADAS
+
+Extraia toda a pasta e abra tcc.yyp no GameMaker.
+Base integral: v5.21, com a nova recepção e os créditos temporários na escadaria.
+
+As seis portas do corredor da fase 2 agora seguem exatamente o modelo da
+porta de ferramentas: mesmo sprite, escala 0,55 e dimensões 72,6 x 63,8.
+Isso inclui laboratório, depósito, ferramentas, descanso, escadaria e manutenção.
+As cinco portas superiores estão alinhadas. A manutenção mantém seu acesso
+na parede inferior, usando o mesmo desenho e tamanho.
+
+Foi removido o desenho antigo da porta branca e o visual exclusivo da
+manutenção no corredor. O rótulo flutuante isolado MANUTENÇÃO também saiu;
+a identificação continua aparecendo na caixa de interação ao se aproximar.
+Os visuais usam renderização padrão de sprite, sem novos eventos Draw.
+Foi reutilizado Spr_porta_funcionarios, o mesmo recurso da porta de ferramentas.
+Nenhuma imagem nova foi gerada para esta alteração.
+
+Chaves, destinos, áreas de interação, colisões, inventário, nova recepção,
+final temporário da fase 1 e atalho P continuam como na v5.21.
+
+PREVIA_PORTAS_V5_22.png mostra a composição das instâncias e sprites reais
+da Room; não é captura da engine. Os testes e a estrutura foram conferidos,
+mas não houve compilação/execução VM/YYC: GameMaker não está instalado aqui.
+Consulte VALIDACAO_V5_22.txt. Documentos e prévias antigos são históricos.

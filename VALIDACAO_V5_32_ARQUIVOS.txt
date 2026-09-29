@@ -1,0 +1,4 @@
+PASSOU: test_arquivos_v532.cjs, rotas entre estantes, chegada, cientista/guarda, chave e retorno pelo duto. Trava de chave verificada com modo_teste_portas_livres=false; configuracao original de teste preservada no jogo.
+PASSOU: test_pesquisa_v531.cjs com chegada atualizada nos Arquivos.
+PASSOU: validate_project.py, 159 recursos, 167 YY/YYP.
+APIs simuladas; sem compilacao ou execucao nativa GameMaker.

@@ -1,0 +1,5 @@
+Base: ZIP v5.28_SALA1_PIXEL enviado pelo usuario.
+Sala alterada: Room_Desmoronada. Arte simplificada em 48 cores, grade uniforme 2x2 e nearest-neighbor; dimensoes 1050x680. Cenario estatico, sem desenho procedural novo.
+Preservados os dois documentos sobre armazenamento quimico, diario, porta, itens, inimigos e checkpoint. Parede inferior realinhada.
+Arte gerada com image_gen: manter layout original, estilo simples da Sala de Espera, remover ruido e texturas finas, usar contornos limpos e sombreado em 2-3 tons; caixas, pedras e recipientes identificados.
+Extrair a pasta inteira e abrir tcc.yyp. Nao compilado nativamente neste ambiente.

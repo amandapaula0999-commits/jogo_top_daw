@@ -1,0 +1,6 @@
+ESCAPE THE BUNKER 5.42 - ARENA
+Base: 5.41 CORREDOR FASE 2.
+Arena Room1 mantida em 1366 x 768. Arte baseada na referência enviada, ajustada com edição de imagem e reamostragem pontual. Portas de 48-52 pixels de altura, cadeiras próximas de 36 pixels; personagem com cerca de 36,5 pixels visíveis. As portas são largas para acomodar a fuga do boss, sem duplicar sua altura.
+Colisões refeitas para celas e mesas. Cela esquerda acessível; outras duas fechadas. Saída inferior central mantém o encontro e o retorno originais. Indícios aproximados dos terminais. Não foi adicionada mecânica de cobra.
+PREVIA_ARENA_V5_42.png é composição dos sprites, não captura do GameMaker.
+Abrir tcc.yyp após extrair a pasta inteira. Validação de recursos e simulações automatizadas; requer teste final de compilação e partida no GameMaker.

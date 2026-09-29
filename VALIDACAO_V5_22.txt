@@ -1,0 +1,12 @@
+VALIDAÇÃO V5.22 — PORTAS PADRONIZADAS
+
+As seis portas do corredor da fase 2 usam Spr_porta_funcionarios, escala 0.55 e quadro estático, conforme a porta de ferramentas. Cinco portas estão alinhadas à parede superior; manutenção permanece na parede inferior.
+
+Verificações realizadas:
+- validate_project.py: 161 recursos registrados, 169 arquivos YY/YYP analisados; referências, imagens de sprites, camadas e áudio verificados. 39 quadros de portas conferidos.
+- test_corredor_v516.cjs: 6 verificações aprovadas (colisões, acessibilidade, interações, retornos e estado do jogador).
+- test_dialogos_v519.cjs: 9 verificações aprovadas (diálogos, portas, mensagens, prioridades e pausa).
+- Prévia composta com os recursos e posições da room inspecionada visualmente.
+- Todos os demais arquivos GML permanecem idênticos à versão 5.21. Apenas o Draw antigo da porta de manutenção foi removido, junto da sua referência no objeto; o sprite agora usa a renderização padrão.
+
+Limitação: validação estrutural e simulações da lógica, sem compilação ou execução no GameMaker VM/YYC. A prévia não é uma captura do jogo em execução.

@@ -1,0 +1,2 @@
+
+atacando = false;

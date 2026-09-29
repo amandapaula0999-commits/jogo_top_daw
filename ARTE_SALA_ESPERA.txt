@@ -1,0 +1,5 @@
+Fonte: imagem fornecida pelo usuário (ChatGPT Image 21 de set. de 2026, 19_30_28.png).
+PNG original mantido byte a byte nos arquivos principal e layer do sprite.
+Dimensões do PNG: 1448 x 1086. Dimensões em jogo: 512 x 384.
+Sem quantização de paleta, recoloração ou camada extra de sombra.
+Redução em jogo com gpu_set_texfilter(false); viewport com ampliação inteira.

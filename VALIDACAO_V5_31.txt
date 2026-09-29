@@ -1,0 +1,3 @@
+PASSOU test_pesquisa_v531.cjs: rotas, spawns, retorno ao corredor, documento no diario, duto para Arquivos e flag de tela preta. APIs simuladas.
+PASSOU validate_project.py: 157 recursos e 165 YY/YYP.
+Nao houve compilacao nem execucao nativa no GameMaker.

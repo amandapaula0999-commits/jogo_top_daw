@@ -1,0 +1,4 @@
+PASSOU: test_sala1_pixel.cjs (GML com APIs simuladas): spawn e rotas para documentos/itens/inimigos/porta; registro de dois documentos no diario sem duplicacao; transicao para corredor; checkpoint da queda.
+PASSOU: validate_project.py (153 recursos, 161 YY/YYP, PNGs e referencias).
+PASSOU: grade de pixels uniforme 2x2. Previa composta com sprite do jogador, nao captura nativa.
+Sem compilacao ou execucao nativa no GameMaker.

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Snd_tensao",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":2,
+  "compression":1,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":16,
+  "exportDir":"",
+  "name":"Snd_tensao",
+  "parent":{
+    "name":"Audio",
+    "path":"folders/Audio.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Snd_tensao.wav",
+  "volume":1.0,
+}

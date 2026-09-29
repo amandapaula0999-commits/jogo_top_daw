@@ -1,0 +1,43 @@
+ESCAPE THE BUNKER — V5.15 — NOVA SALA DE DESCANSO
+
+Extraia a pasta inteira e abra tcc.yyp no GameMaker.
+Esta entrega contém o projeto completo, com a manutenção e os acessos da v5.14 preservados.
+
+O QUE MUDOU
+- Room_Funcionarios agora usa a nova arte da sala de descanso enviada.
+- Personagem fixo removido da arte; piso corrigido. O personagem controlável
+  continua sendo Obj_jogador, com os sprites e a escala existentes.
+- Cenário importado como sprite estático na Room, com proporções preservadas.
+- 20 instâncias editáveis de Obj_parede na camada Colisoes_Descanso:
+  paredes, batentes, móveis e limite físico da saída.
+- Café, caixinha de chaves e dormitório alinhados às novas posições.
+- Saída no pequeno corredor inferior esquerdo. Entrar nele apenas mostra
+  [E] ABRIR PORTA / SAIR. É necessário pressionar E; a porta abre com os
+  quadros de animação existentes e então retorna ao corredor do nível 2.
+- Vida, inventário e chaves são preservados na troca de sala.
+- Spawn de entrada e câmera ajustados para a nova sala de 640 x 405.
+
+COMO ENCONTRAR
+Depois da escadaria, no corredor do nível 2, use E na porta superior direita
+dos funcionários. A porta inferior desse corredor continua levando à manutenção.
+O atalho de testes P continua passando por manutenção e depois descanso.
+Dentro da sala de descanso, entre na passagem inferior esquerda e pressione E
+para abrir a saída e voltar ao corredor do nível 2.
+A porta com cadeado no alto à direita mantém a interação de dormitório fechado.
+
+VERIFICAÇÕES REALIZADAS
+python tools/validate_project.py — estrutura e arquivos dos 129 recursos válidos.
+node tools/test_descanso_v515.cjs — 8 verificações da nova sala passaram.
+node tools/test_manutencao_v513.cjs — 9 verificações de manutenção passaram.
+node tools/test_collisions.cjs — 19 verificações de colisão passaram.
+node tools/test_portas_v58.cjs — portas de progressão verificadas.
+node tools/test_debug_room_loop_v510.cjs — sequência P e spawns verificados.
+ZIP completo conferido por CRC e comparado ao projeto original para evitar
+omissão de arquivos. Sprites conferidos visualmente.
+
+LIMITAÇÃO DA VALIDAÇÃO
+Os testes de lógica usam APIs GameMaker simuladas em Node.js, além de conferir
+a geometria real das Rooms e os metadados. O GameMaker não está instalado no
+ambiente de edição; esta entrega não foi compilada ou jogada no runtime VM/YYC.
+As suítes antigas da pasta tools documentam outras versões e não representam,
+em conjunto, uma certificação de execução desta versão. Use os comandos acima.

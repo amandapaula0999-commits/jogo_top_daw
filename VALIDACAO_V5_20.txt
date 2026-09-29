@@ -1,0 +1,167 @@
+VALIDAÇÃO V5.20 — 2026-09-18
+Testes estruturais e GML com APIs simuladas. NÃO é compilação/execução VM/YYC.
+
+
+$ python tools/validate_project.py
+OK: 159 recursos referenciados
+OK: 167 arquivos YY/YYP lidos estruturalmente
+OK: sprites possuem PNG principal e layers
+OK: schema de áudio compatível com GameMaker 2024.14
+OK: colisão, munição, aggro e animações presentes
+OK: manchas usam semente numérica; troca de trilha e indícios ambientais presentes
+OK: portas clara e restrita possuem frames e transição animada
+OK: 39 quadros de portas com sequência, dimensões e referências conferidas
+INFO: rotas completas verificadas por node tools/test_collisions.cjs
+
+
+$ node tools/test_regressions.cjs
+OK: sementes numéricas e manchas finitas nas oito salas (assets opacos)
+OK: menu, fachada e recepção reutilizam a mesma voz musical
+OK: troca de trilha limpa cópias antigas e mantém só uma no subsolo
+OK: áudio acompanha suspeita, perseguição, perda de contato e vitória sem sobrepor loops
+OK: visão respeita parede, cone e redução de alcance ao andar em silêncio
+OK: perseguição começa por visão; inimigo busca última posição depois de perder contato
+OK: munição total nove; nenhuma coleta duplica ao reentrar ou reiniciar
+OK: sete evidências distintas, persistência entre salas e novo jogo limpa o diário
+OK: golpe do Boss: aviso de 65 passos; dano e barril uma única vez no raio
+OK: onda respeita cobertura e invulnerabilidade; ácido cancela a preparação do Boss
+OK: explosão interrompe ambas as trilhas antes do efeito
+OK: porta branca: som único, último quadro visível e inventário salvo
+OK: porta vermelha: som único, último quadro visível e inventário salvo
+OK: pause congela a abertura e diálogo impede ativação da porta
+OK: Recomeçar no pause remove bloqueio e spawn pendentes da porta
+OK: dano de contato bloqueado durante a abertura
+OK: chefe e inimigo comum param durante a cutscene da porta
+OK: iluminação da sala demolida é estável no Windows e sem banho verde
+OK: pause possui Draw GUI; ESC pausa e P fica reservado ao ciclo de debug
+OK: HUD de arma só aparece depois da coleta
+OK: viewport 4:3 e qualidade adaptativa evitam estiramento e picos de desenho
+OK: zoom da finalização acompanha a dupla e configurações separam os volumes
+OK: menu usa camadas separadas e geometria comum para os quatro cartões
+OK: configurações abre; sair inicia transição sem fechar imediatamente
+OK: arte v44 preserva carteira; v423 usa uma pose idle fornecida por direção
+OK: arma e interface não expõem artefatos de debug
+OK: armas ficam proporcionais e diário nasce como caderneta
+OK: pause e diário novos pertencem ao jogador e não criam instância temporária
+OK: pause v4.21 reutiliza a carteira oficial, separa os lados e anima os quatro cartões
+OK: fluxo do jogador abre, fecha e confirma os dois menus
+OK: arma acompanha a mão, idle respira e o inimigo aceita finalização furtiva
+OK: patrulha usa destinos diagonais e salas subterrâneas têm coberturas e ameaças extras
+OK: derrota do Boss libera progressão; escadaria bidirecional conecta Nível 1 e Nível 2
+
+33 testes de lógica passaram. Runtime GameMaker/Wine ainda deve ser validado.
+
+
+$ node tools/test_collisions.cjs
+OK: segmento: horizontais, verticais, diagonais, origem interna, tangência e distância zero
+OK: parede de 1px detém bala e cano mesmo em deslocamento de 600px
+OK: cano não atravessa paredes nas quatro direções nem durante giro
+OK: varredura escolhe primeiro contato, não a ordem de criação; parede vence empate
+OK: bala e cano acertam cabeça e torso nas oito sprites de direção, mantendo máscara dos pés
+OK: tiro em espaço vazio acima do sprite não acerta; morto não bloqueia o próximo alvo
+OK: um golpe letal solta a trava de finalização e não empurra para a parede
+OK: origem na boca da arma além da parede é bloqueada antes de aparecer do outro lado
+OK: inimigo entre a mão e a boca da arma recebe dano no primeiro passo
+OK: origem sem espaço mantém cano e munição; próximo de quina usa somente lado acessível
+OK: cano parado pode ser recuperado; parede bloqueia coleta e segundo dano
+OK: barril derruba uma vez por impacto; carapaça do Boss continua respeitando ácido
+OK: End Step é registrado; eventos antigos não voltam a dar dano discreto/duplicado
+OK: sprite do cano inteiro cabe no raio de colisão em 360 ângulos
+OK: dez salas: props e máscaras usam as mesmas dimensões e todas as passagens são alcançáveis
+OK: spawns dos inimigos são liberados também com os novos props sólidos
+OK: eventos reais das armas lançam uma vez, gastam recursos só quando há origem válida
+OK: pause/diário impedem movimento e coleta nos eventos End Step
+OK: cache reutiliza textura, recupera perda e limita tentativas quando o target falha
+
+19 testes de colisão passaram (GML simulado; sem runtime gráfico).
+
+
+$ node tools/test_salas8_11_v520.cjs
+OK: seis acessos separados; Depósito exige chave e laboratório exige cartão mesmo em debug
+OK: câmara fechada bloqueia passagem e oculta corpo/cartão; pé de cabra é obrigatório
+OK: esforço alterna E/Espaço, permite erro, expiração e nova tentativa sem abrir
+OK: quatro esforços abrem a porta, removem só seu colisor e revelam o corpo
+OK: cartão é salvo antes da reflexão; ruído único vem depois do texto; emboscada só ao sair
+OK: emboscada fecha saída; vitória libera porta e não reaparece na volta
+OK: duto inativo antes do evento; fuga válida preserva cartão e vida do inimigo
+OK: checkpoint conserva cartão, câmara, reflexão e combate; novo jogo limpa ambos os setores
+OK: perseguição contorna cápsulas/parede; ataques têm aviso e não acertam através da parede
+OK: bala e cano atingem os novos inimigos, mas cápsulas impedem impacto
+OK: laboratório tem rotas livres para cinco inspeções, saída e spawns sem sobrepor cápsulas
+OK: quatro espécimes e terminal: duas páginas, hipóteses e pista da cobra; leituras ficam registradas
+OK: matar no laboratório não altera a emboscada; derrotados não reaparecem; pode sair em combate
+OK: pausa/interfaces congelam esforço e leitura; inimigos não atacam durante o texto
+OK: sprites pré-carregados sem Draw/GUI nos novos objetos; colisores antes do mapa; recursos de rota liberados
+15 testes das Salas 8 e 11 passaram (GML/APIs simulados; sem VM/YYC).
+
+
+$ node tools/test_sala10_v518.cjs
+OK: acesso superior central exige chave mesmo com debug; demais portas conservadas
+OK: caixinha da Sala dos Funcionários continua sendo a origem da chave
+OK: primeira entrada mostra ambiente comum e depois percebe o pé de cabra
+OK: examinar e coletar na primeira visita guarda a ferramenta e deixa suporte vazio
+OK: entrada, saída, retorno e checkpoint preservam a coleta sem exigir segunda visita
+OK: pausa e outras interfaces bloqueiam coleta e avanço das falas
+OK: regra da futura porta da sala fria exige o pé de cabra, inclusive em debug
+OK: paredes contínuas, vão central e móveis sólidos; todos os pontos de uso são alcançáveis
+OK: Sala 10 usa somente sprites estáticos; preview e dados correspondem aos recursos registrados
+9 testes da Sala 10 passaram (GML simulado; sem GameMaker).
+
+
+$ node tools/test_dialogos_v519.cjs
+OK: todos os avisos do descanso usam textos correspondentes, incluindo café e chaves
+OK: todas as dez falas de ferramentas usam a caixa comum; examinar/coletar continuam distintos
+OK: as seis portas do corredor e seus bloqueios aparecem no mesmo painel
+OK: porta interna de manutenção apresenta abrir, fechar e afastar-se
+OK: porta próxima vence narração, sem caixas sobrepostas nem acionamento pelo Draw
+OK: painel original e fonte da parte 1, mesmas coordenadas e margens em GUI 1366x768
+OK: painel e texto cabem na tela sem depender da câmera ou escala da Room
+OK: pause/diário/configuração/cutscene/diálogo ocultam a caixa; fade de entrada permanece
+OK: painéis rasterizados antigos não são mais desenhados e parte 1 usa seu fluxo original
+9 testes de diálogo v5.19 passaram (GML simulado; sem runtime GameMaker).
+
+
+$ node tools/test_descanso_v515.cjs
+OK: arte nova, jogador único e 20 paredes colocadas antes do jogador na Room
+OK: spawn alcança sofá, chaves, café, dormitório e corredor de saída
+OK: andar pelo vestíbulo não sai; E do lado de fora não abre
+OK: E abre com animação e só depois volta ao corredor, preservando inventário e vida
+OK: pause, diário, configuração, diálogo e cutscene bloqueiam a saída
+OK: aviso E usa o mesmo limite do corredor no painel GUI e fica oculto no pause
+OK: café, chaves e dormitório interagem nas novas posições sem conflitar com saída
+OK: acesso normal e atalho P chegam no novo spawn, fora do gatilho de saída
+8 testes da sala de descanso passaram (GML simulado; sem runtime GameMaker).
+
+
+$ node tools/test_corredor_v516.cjs
+OK: 13 colisores da Room, um jogador e cenário sem desenho procedural
+OK: corredor inteiro e os acessos originais são alcançáveis; caixas e barril bloqueiam
+OK: portas separadas não disputam E e retornos surgem em área livre fora do gatilho
+OK: descanso e manutenção só entram com E e preservam vida e inventário
+OK: escadaria retorna com transição e sinaliza checkpoint sem saída automática
+OK: câmera acompanha o corredor longo dentro dos limites
+6 testes do corredor passaram (GML simulado; sem runtime GameMaker).
+
+
+$ node tools/test_manutencao_v513.cjs
+OK: porta inferior adicionada após a escada sem substituir Funcionários ou retorno
+OK: entrada e volta com E preservam vida/inventário e usam spawns seguros
+OK: 12 paredes na Room: limites, bancos e bloco central, sem duplicação no Create
+OK: porta fechada bloqueia jogador, bala e cano; aberta libera o interior
+OK: fechar sobre os pés é impedido; fechar de dentro permite reabrir e sair
+OK: pause/diário/cutscene não acionam porta; manter E não alterna a cada frame
+OK: estado da porta persiste na reentrada; novo jogo reinicia o estado
+OK: camera cabe na sala e segue personagem sem aumentar sua escala
+OK: arte estática, sprite original do jogador e recursos referenciados existem
+9 testes da integração v5.13 passaram (GML simulado + geometria real; sem runtime GameMaker).
+
+
+$ node tools/test_debug_room_loop_v510.cjs
+OK: atalho P percorre 8 salas incluindo Manutenção, usa spawns seguros e preserva estado persistente.
+
+
+109 verificações de lógica/regressão aprovadas nas nove suítes acima.
+Estrutura: 159 recursos e 167 arquivos YY/YYP conferidos.
+Os testes legados de versões anteriores permanecem arquivados em tools;
+as suítes listadas acima correspondem ao fluxo atual.
+Prévia visual: composição de sprites reais, não captura de execução.

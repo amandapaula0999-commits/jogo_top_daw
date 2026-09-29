@@ -1,0 +1,4 @@
+PASSOU: test_corredor_v530.cjs: rotas, chegadas livres, bloqueio completo, portas Sala 1/Pesquisa e elevador quebrado.
+PASSOU: test_sala1_pixel.cjs: documentos, saida atualizada e checkpoint.
+PASSOU: validate_project.py: 155 recursos, 163 YY/YYP.
+Testes GML com APIs simuladas; nao compilado nem executado nativamente no GameMaker.

@@ -1,0 +1,13 @@
+REGRESSÃO REPRODUZIDA NA BASE:
+Spr_barril_caindo: 6 frames, índices 0..5.
+Após queda completa: 0 poças criadas; teste esperava 1 e falhou.
+
+RESULTADO APÓS CORREÇÃO:
+6 grupos barril/ácido passaram; log em VALIDACAO_BARRIL_V5_40.txt.
+9 grupos do boss passaram com as paredes nativas lidas da Room1.
+Referências: 173 recursos, 15 rooms e 260 instâncias.
+Validação estrutural: 181 YY/YYP; PNGs e layers presentes.
+Arte conferida visualmente; sprite e layer recebem a mesma imagem.
+Base: exclusivamente o ZIP v5.39 enviado neste pedido.
+
+Os testes usam APIs simuladas em Node; não houve execução VM/YYC do GameMaker.

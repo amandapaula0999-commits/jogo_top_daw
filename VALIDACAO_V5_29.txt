@@ -1,0 +1,4 @@
+PASSOU: test_sala1_pixel.cjs com APIs simuladas: chegada e rotas, documentos no diario sem duplicacao, porta e checkpoint.
+PASSOU: validate_project.py: 153 recursos e 161 arquivos YY/YYP.
+Previa recomposta com escala 0.5 do cenario e jogador original.
+Sem compilacao/execucao nativa GameMaker.

@@ -1,0 +1,25 @@
+ESCAPE THE BUNKER — V5.27 NOVO DEPÓSITO
+Projeto completo, baseado na versão 5.26.
+Extraia a pasta inteira e abra tcc.yyp no GameMaker.
+
+COMO FUNCIONA
+A sala anteriormente chamada manutenção é agora o DEPÓSITO. Seu acesso continua na porta inferior do corredor da fase 2. A antiga Sala 8 apagada não voltou.
+A câmara fria fica no bloco central, na mesma Room. O telhado inicialmente cobre o interior.
+- Sem pé de cabra: E mostra que a porta está trancada/emperrada; em seguida aparece uma voz pedindo ajuda. ESPAÇO conclui a mensagem.
+- Depois de visitar ferramentas, se ainda estiver sem pé de cabra: a mensagem orienta voltar e pegar a ferramenta.
+- Com pé de cabra: segure E por 3 segundos perto da porta. Soltar E, se afastar ou pausar reinicia o esforço.
+- Ao abrir: troca para o sprite pronto sem telhado, revela o interior azul-claro e libera a passagem. A abertura persiste ao sair e voltar.
+- Interior: caixas, prateleira e homem sentado no chão, escorado nela, com colisões de Obj_parede.
+- Perto do homem, E coleta o Crachá de Acesso e libera a sala de pesquisa (laboratório da fase 2). O crachá persiste no inventário.
+- A caixinha da sala de descanso volta a fornecer somente a chave de ferramentas.
+
+ARTE
+Cenário novo integrado nos quadros do sprite Spr_sala_manutencao_cenario, pré-carregado. Sem geometria de cenário desenhada em Draw/Draw GUI. Somente os textos de interação usam a interface existente.
+A arte aberta inclui o homem e o crachá desenhados; coletar registra o item uma única vez no inventário.
+
+VERIFICAÇÕES
+9 verificações da câmara fria, 6 do corredor e 7 dos créditos/atalho P aprovadas com eventos GML e APIs simuladas.
+Segurar E verificado em 30/60/120 FPS. Conferidos bloqueio fechado, acesso aberto, colisões, orientações, inventário e checkpoint.
+153 recursos e 161 arquivos YY/YYP conferidos; imagens principais e camadas correspondentes integradas.
+PREVIA_CAMARA_FRIA_V5_27.png é uma prévia do sprite, não captura do jogo.
+Não foi possível compilar ou executar no GameMaker VM/YYC neste ambiente.

@@ -1,0 +1,31 @@
+Arquivos da base alterados (todos os demais são idênticos byte a byte):
+objects/Obj_mapa/Create_0.gml
+objects/Obj_recepcionista/Create_0.gml
+rooms/Room_Recepcao/Room_Recepcao.yy
+sprites/Spr_recepcao_cenario/62dcf6fb-05fb-4b9e-a3ab-6a9bfebe9f41.png
+sprites/Spr_recepcao_cenario/layers/62dcf6fb-05fb-4b9e-a3ab-6a9bfebe9f41/e31a4a0a-cf06-4d83-bdcd-50ec82ae9abe.png
+
+node tools/test_recepcao_v537.cjs
+OK: arte estática e 15 colisores na Room, sem paredes antigas invisíveis ou NPC duplicado
+OK: entrada alcança balcão, documentos, café, banco e ambas as portas; tapete não bloqueia
+OK: fachada e atalho P chegam no mesmo ponto seguro, fora do gatilho de saída
+OK: conversa é acionada pela frente do balcão e mantém as quatro falas originais
+OK: papéis mantêm o indício 02 e não disputam a tecla E com a secretária
+OK: portas só funcionam com E; conversa libera integração e retorno conserva progresso
+OK: balcão, bancada e vasos bloqueiam projéteis; máscaras acompanham seus tamanhos
+OK: câmera preserva proporções, cobre a Room e recepção não recebe sombra subterrânea
+8 testes da recepção passaram (GML simulado; sem runtime GameMaker).
+
+python3 tools/validate_resource_links.py
+OK: identidades e referências conferidas — 170 recursos, 15 rooms, 221 instâncias.
+
+python3 tools/validate_project.py
+OK: 170 recursos referenciados
+OK: 178 arquivos YY/YYP lidos estruturalmente
+OK: sprites possuem PNG principal e layers
+OK: schema de áudio compatível com GameMaker 2024.14
+OK: colisão, munição, aggro e animações presentes
+OK: manchas usam semente numérica; troca de trilha e indícios ambientais presentes
+OK: portas clara e restrita possuem frames e transição animada
+OK: 39 quadros de portas com sequência, dimensões e referências conferidas
+INFO: rotas completas verificadas por node tools/test_collisions.cjs

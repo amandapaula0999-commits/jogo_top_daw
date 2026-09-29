@@ -1,0 +1,19 @@
+ESCAPE THE BUNKER — V5.26 SEM DEPÓSITO
+Projeto completo, baseado na versão 5.25.
+Extraia a pasta inteira e abra tcc.yyp no GameMaker.
+
+ALTERAÇÕES
+- Sala 8 / Depósito removida do projeto e da ordem de salas.
+- Porta e interação de acesso removidas do corredor da fase 2. A parede e suas colisões permanecem fechadas.
+- Removidos os eventos da câmara fria e da emboscada exclusivos dessa sala, além de seus objetos, sprites e fontes de arte exclusivas.
+- Preservada a IA compartilhada dos lagartos/caracóis utilizados pelo laboratório.
+- O Cartão de Acesso agora é coletado na caixinha da sala de descanso junto da chave de ferramentas. Assim o laboratório continua acessível.
+- Textos de coleta, orientação e laboratório ajustados para não depender do depósito.
+- P segue de ferramentas diretamente para laboratório.
+
+VALIDAÇÃO
+32 verificações em simulação de GML aprovadas: remoção e progressão (8), corredor (6), créditos/P (7), interface (11).
+153 recursos e 161 arquivos YY/YYP conferidos. Nenhuma referência aos recursos removidos nos arquivos GML/YY ativos.
+Inclui testes do cartão após troca de sala/checkpoint e da perseguição, ataques e colisões dos inimigos do laboratório.
+Prévia do corredor composta com os recursos reais, sem captura de execução no GameMaker.
+Não foi possível compilar ou executar no GameMaker VM/YYC neste ambiente.

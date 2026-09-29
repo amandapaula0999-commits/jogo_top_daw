@@ -1,0 +1,7 @@
+Escape The Bunker v5.33
+Base: v5.32 Arquivos.
+Sprites enviados importados: 16 quadros andando e 4 parados.
+Ordem: baixo, direita, cima, esquerda. Recorte 64x64, duplicação inteira sem suavização, alinhamento dos pés à origem existente.
+Máscara, escala e parâmetros de colisão preservados; troca de estado agora usa sprites parados.
+Animação de morte preexistente mantida (não foi enviada substituição).
+Extraia a pasta inteira e abra tcc.yyp. Validação estática e testes simulados; sem compilação nativa neste ambiente.

@@ -1,0 +1,13 @@
+speed = 0;
+velocidade = 14;
+dano = 8;
+em_voo = true;
+impacto_registrado = false;
+inicial_pendente = false;
+inicial_x = x;
+inicial_y = y;
+rotacao_velocidade = 20;
+image_xscale = 0.55 * bunker_escala_protagonista();
+image_yscale = image_xscale;
+raio_colisao = bunker_raio_projetil(Spr_cano, image_xscale);
+alarm[0] = 20;

@@ -1,0 +1,79 @@
+Validação estrutural e GML simulado; não é compilação GameMaker.
+
+$ python3 tools/validate_project.py
+OK: 142 recursos referenciados
+OK: 150 arquivos YY/YYP lidos estruturalmente
+OK: sprites possuem PNG principal e layers
+OK: schema de áudio compatível com GameMaker 2024.14
+OK: colisão, munição, aggro e animações presentes
+OK: manchas usam semente numérica; troca de trilha e indícios ambientais presentes
+OK: portas clara e restrita possuem frames e transição animada
+OK: 39 quadros de portas com sequência, dimensões e referências conferidas
+INFO: rotas completas verificadas por node tools/test_collisions.cjs
+
+$ node tools/test_sala10_v518.cjs
+OK: acesso superior central exige chave mesmo com debug; demais portas conservadas
+OK: caixinha da Sala dos Funcionários continua sendo a origem da chave
+OK: primeira entrada mostra ambiente comum e depois percebe o pé de cabra
+OK: examinar e coletar na primeira visita guarda a ferramenta e deixa suporte vazio
+OK: entrada, saída, retorno e checkpoint preservam a coleta sem exigir segunda visita
+OK: pausa e outras interfaces bloqueiam coleta e avanço das falas
+OK: regra da futura porta da sala fria exige o pé de cabra, inclusive em debug
+OK: paredes contínuas, vão central e móveis sólidos; todos os pontos de uso são alcançáveis
+OK: Sala 10 usa somente sprites estáticos; preview e dados correspondem aos recursos registrados
+9 testes da Sala 10 passaram (GML simulado; sem GameMaker).
+
+$ node tools/test_corredor_v516.cjs
+OK: 13 colisores da Room, um jogador e cenário sem desenho procedural
+OK: corredor inteiro e os acessos originais são alcançáveis; caixas e barril bloqueiam
+OK: portas separadas não disputam E e retornos surgem em área livre fora do gatilho
+OK: descanso e manutenção só entram com E e preservam vida e inventário
+OK: escadaria retorna com transição e sinaliza checkpoint sem saída automática
+OK: câmera acompanha o corredor longo dentro dos limites
+6 testes do corredor passaram (GML simulado; sem runtime GameMaker).
+
+$ node tools/test_descanso_v515.cjs
+OK: arte nova, jogador único e 20 paredes colocadas antes do jogador na Room
+OK: spawn alcança sofá, chaves, café, dormitório e corredor de saída
+OK: andar pelo vestíbulo não sai; E do lado de fora não abre
+OK: E abre com animação e só depois volta ao corredor, preservando inventário e vida
+OK: pause, diário, configuração, diálogo e cutscene bloqueiam a saída
+OK: aviso E usa o mesmo limite do corredor e fica oculto no pause
+OK: café, chaves e dormitório interagem nas novas posições sem conflitar com saída
+OK: acesso normal e atalho P chegam no novo spawn, fora do gatilho de saída
+8 testes da sala de descanso passaram (GML simulado; sem runtime GameMaker).
+
+$ node tools/test_manutencao_v513.cjs
+OK: porta inferior adicionada após a escada sem substituir Funcionários ou retorno
+OK: entrada e volta com E preservam vida/inventário e usam spawns seguros
+OK: 12 paredes na Room: limites, bancos e bloco central, sem duplicação no Create
+OK: porta fechada bloqueia jogador, bala e cano; aberta libera o interior
+OK: fechar sobre os pés é impedido; fechar de dentro permite reabrir e sair
+OK: pause/diário/cutscene não acionam porta; manter E não alterna a cada frame
+OK: estado da porta persiste na reentrada; novo jogo reinicia o estado
+OK: camera cabe na sala e segue personagem sem aumentar sua escala
+OK: arte estática, sprite original do jogador e recursos referenciados existem
+9 testes da integração v5.13 passaram (GML simulado + geometria real; sem runtime GameMaker).
+
+$ node tools/test_collisions.cjs
+OK: segmento: horizontais, verticais, diagonais, origem interna, tangência e distância zero
+OK: parede de 1px detém bala e cano mesmo em deslocamento de 600px
+OK: cano não atravessa paredes nas quatro direções nem durante giro
+OK: varredura escolhe primeiro contato, não a ordem de criação; parede vence empate
+OK: bala e cano acertam cabeça e torso nas oito sprites de direção, mantendo máscara dos pés
+OK: tiro em espaço vazio acima do sprite não acerta; morto não bloqueia o próximo alvo
+OK: um golpe letal solta a trava de finalização e não empurra para a parede
+OK: origem na boca da arma além da parede é bloqueada antes de aparecer do outro lado
+OK: inimigo entre a mão e a boca da arma recebe dano no primeiro passo
+OK: origem sem espaço mantém cano e munição; próximo de quina usa somente lado acessível
+OK: cano parado pode ser recuperado; parede bloqueia coleta e segundo dano
+OK: barril derruba uma vez por impacto; carapaça do Boss continua respeitando ácido
+OK: End Step é registrado; eventos antigos não voltam a dar dano discreto/duplicado
+OK: sprite do cano inteiro cabe no raio de colisão em 360 ângulos
+OK: dez salas: props e máscaras usam as mesmas dimensões e todas as passagens são alcançáveis
+OK: spawns dos inimigos são liberados também com os novos props sólidos
+OK: eventos reais das armas lançam uma vez, gastam recursos só quando há origem válida
+OK: pause/diário impedem movimento e coleta nos eventos End Step
+OK: cache reutiliza textura, recupera perda e limita tentativas quando o target falha
+
+19 testes de colisão passaram (GML simulado; sem runtime gráfico).

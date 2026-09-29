@@ -1,0 +1,19 @@
+{
+  "base": "v5.21",
+  "versao": "v5.22",
+  "modificados": [
+    "objects/Obj_acesso_escada_n2_visual/Obj_acesso_escada_n2_visual.yy",
+    "objects/Obj_acesso_manutencao_visual/Obj_acesso_manutencao_visual.yy",
+    "rooms/Room_Corredor_N2/Room_Corredor_N2.yy"
+  ],
+  "adicionados": [
+    "VALIDACAO_V5_22.txt",
+    "PREVIA_PORTAS_V5_22.png",
+    "LEIA_ME_V5_22.txt",
+    "tools/preview_portas_v522.cjs"
+  ],
+  "removidos": [
+    "objects/Obj_acesso_manutencao_visual/Draw_0.gml"
+  ],
+  "arquivos_preservados": 874
+}

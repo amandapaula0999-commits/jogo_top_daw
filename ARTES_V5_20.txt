@@ -1,0 +1,35 @@
+ARTE IMPORTADA — V5.20
+
+Ferramenta: geração de imagens integrada, usando o cenário existente da
+Sala 10 como referência visual. As imagens foram importadas no projeto;
+nenhuma chamada de geração, download ou desenho procedural ocorre no jogo.
+Conversão técnica: RGBA, recorte da margem transparente nos três personagens/
+itens e redução por vizinho mais próximo para as dimensões dos sprites.
+
+Arquivos mestres preservados em art_sources_v520/:
+deposito.png -> Spr_s8_deposito, 640x427
+corpo.png -> Spr_s8_corpo, 62x30
+cartao.png -> Spr_cartao_acesso, 8x15
+homem_lagarto.png -> Spr_homem_lagarto, 38x56
+laboratorio.png -> Spr_laboratorio_cenario, 640x427
+
+Resumo das orientações de arte:
+- Depósito: bunker top-down, pixel art, prateleiras e caixas à esquerda,
+  câmara fria azulada à direita com abertura lateral, saída inferior e grelha
+  de emergência na esquerda. Sem personagens ou interface na imagem.
+- Corpo: trabalhador de roupa cinza deitado, cabeça à esquerda, pessoa já
+  falecida, ferimento discreto e sem conteúdo gráfico; cordão sem crachá.
+- Cartão: crachá branco com faixa ciano, pequeno chip dourado e alça curta.
+- Homem-lagarto: criatura humanoide reptiliana verde-oliva, postura hostil,
+  garras e calças escuras, vista frontal top-down, fundo transparente.
+- Laboratório: sala retangular 3:2, piso verde-escuro e metal, lâmpadas laranja,
+  saída inferior central, terminal superior central e quatro cápsulas de
+  vidro: formiga no alto à esquerda, caracol embaixo à esquerda, lagarto no
+  alto à direita, cobra embaixo à direita. Cruz central e espaço ao redor das
+  cápsulas livres para andar. Sem jogador, inimigos soltos, texto ou interface
+  pintados na imagem. Silhuetas reconhecíveis e pixel art de blocos simples.
+
+Os inimigos móveis são instâncias separadas. O caracol usa o sprite original
+Spr_inimigo_parado_baixo. A porta usa quadros de Spr_porta_bunker_comum.
+Arquivos de composição em tools/preview_salas_v520.cjs servem apenas para QA
+fora do GameMaker, e não são scripts/eventos executados pelo jogo.

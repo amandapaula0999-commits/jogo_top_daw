@@ -1,0 +1,15 @@
+ESCAPE THE BUNKER — V5.24
+Projeto completo, baseado na versão 5.23.
+Extraia toda a pasta e abra tcc.yyp no GameMaker.
+
+- As portas da fase 2 mostram [E] e o nome em branco acima da porta, ao se aproximar.
+- Removida a faixa GUI para os comandos dessas portas. Avisos de bloqueio e diálogos continuam usando a interface existente.
+- Escadaria e retornos das salas seguem a mesma apresentação; porta interna de manutenção mostra seu comando em branco.
+- Porta da recepção: [E] SALA DE ESPERA. Removido o complemento / INTEGRAÇÃO; destino e interação preservados.
+- PREVIA_PORTAS_V5_24.png: composição dos recursos reais para inspeção, não captura do GameMaker.
+
+VERIFICAÇÕES
+11 verificações de interface e 6 do corredor aprovadas em simulação de GML.
+161 recursos e 169 arquivos YY/YYP conferidos, incluindo integridade dos sprites e referências.
+ZIP completo verificado por CRC.
+Não foi possível compilar ou executar no GameMaker VM/YYC neste ambiente.

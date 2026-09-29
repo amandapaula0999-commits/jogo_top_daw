@@ -1,0 +1,19 @@
+Escape The Bunker - V5.12
+
+Ajustes aplicados nesta versão:
+1) Sala dos Funcionários da Fase 2 refeita em estilo visual mais próximo das salas bunker do projeto.
+2) Mantido o sistema de caixa de apresentação/objetivo já usado no jogo.
+3) Mantidas as interações da sala (cafeteira, chaves e dormitório).
+4) Limpeza do projeto: removidos arquivos de preview, relatórios e documentos antigos/duplicados que não são usados pelo GameMaker para abrir o projeto.
+
+Estrutura principal mantida:
+- folders/
+- fonts/
+- objects/
+- options/
+- rooms/
+- scripts/
+- sounds/
+- sprites/
+- tools/
+- tcc.yyp
