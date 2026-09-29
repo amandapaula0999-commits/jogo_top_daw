@@ -1,0 +1,15 @@
+RECEPÇÃO — ARTE V5.21
+
+Gerada com a ferramenta integrada image_gen, usando a arte da Sala 10 como
+referência de estilo. PNG pré-carregado, redimensionado para 640x427 por
+vizinho mais próximo. Nenhuma geração ou desenho procedural do cenário
+acontece durante o jogo.
+
+Original: art_sources_v521/recepcao.png
+Sprite: sprites/Spr_recepcao_cenario/Spr_recepcao_cenario.yy e seus PNGs
+Objeto: Obj_recepcao_cenario, sem eventos Draw/Draw GUI
+Room: Room_Recepcao
+Prévia com os personagens originais: PREVIA_RECEPCAO_V5_21.png
+
+PROMPT FINAL (referência: Spr_sala10_cenario):
+Use case: stylized-concept. Asset type: actual playable 2D TOP-DOWN PIXEL ART room background for GameMaker, entire room visible, landscape 3:2. Input image is STYLE REFERENCE ONLY: match its simple chunky pixel clusters, orthographic top-down game perspective, crisp dark outlines and readable shapes. Primary request: REDESIGN THE SURFACE RECEPTION as warm and welcoming rather than underground industrial. Warm cream plaster walls, light muted beige square floor tiles, honey-brown wood furnishings, restrained amber lighting, muted green plants. No smooth high-resolution painting. ROOM LAYOUT: thick rectangular perimeter wall. Large wide wooden RECEPTION DESK at the far/back end, upper center of image, spans x=25% to 75%, y=28% to 45%. One computer monitor with keyboard on left half, several neatly grouped white papers and folders on right half, small desk mug. Leave a clear empty strip BEHIND desk between its back edge and the top wall where the game's existing receptionist can later stand. DO NOT DRAW ANY PEOPLE. Three round wall clocks above the desk on the back wall. Windows on upper left and upper right back wall suggesting soft daylight and greenery outside, this room is ABOVE GROUND. Small coffee station with coffee machine, cups, wood cabinet against LEFT wall around 55-70% of image height. A modest two-seat upholstered waiting bench against lower RIGHT wall at 70% height. Three or four potted leafy plants near corners, but leave floor passage open. A muted terracotta rug in front of the desk, flat on floor, no raised border. ENTRANCE opening at BOTTOM CENTER x=47-55%, clear passage. SECOND doorway on RIGHT SIDE WALL around 50% height, dark wood/metal door with a small green indicator light, a clear walkable approach from the center. Keep bench below that door and no furniture blocking either door. Large unobstructed central floor aisle from bottom entrance to desk front and right doorway. No text, no letters, no labels, no characters, no UI, no watermark. No hazard stripes, lab pods, monsters, industrial pipes, cold blue lighting or gloomy bunker atmosphere. Keep the pixel art SIMPLE like reference, welcoming but still believable office reception. Furniture must align to pixel grid. This will be reduced to 640x427 pixels for the game.

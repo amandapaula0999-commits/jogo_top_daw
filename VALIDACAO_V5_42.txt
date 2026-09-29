@@ -1,0 +1,6 @@
+Validação estática: 173 recursos e 181 YY/YYP; identidades e links consistentes.
+Rotas: chave, saída e dois indícios alcançáveis com margem de 30x18 pixels.
+9 grupos de testes do boss aprovados com GML/APIs simulados; inclui fuga da cela esquerda e passagem na saída.
+Mecânica de barris e ácido preservada da versão 5.42.
+Arte e layers PNG de 1230x692 consistentes. Prévia revisada.
+Não foi executado compilador nem runtime GameMaker.

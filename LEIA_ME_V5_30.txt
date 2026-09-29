@@ -1,0 +1,4 @@
+Corredor da Fase 1 em pixel art simples, sprite estatico e colisores na Room. Dimensoes 704x320. Portas inferiores: Sala 1 e Pesquisa; elevador superior esquerdo; escombros fecham o lado direito.
+Arte gerada com image_gen com referencia visual enviada: formas simples, paredes oliva e piso cinza, sem texturas finas; normalizada em grade 2x2 com nearest-neighbor.
+Base v5.29 preservada. Extrair tudo e abrir tcc.yyp.
+Sem compilacao nativa GameMaker.

@@ -1,0 +1,14 @@
+ESCAPE THE BUNKER — SALA 1 PIXEL
+
+Base: v5.28 CORRECAO_TRANSICAO.
+Extraia a pasta completa e abra tcc.yyp no GameMaker.
+
+SALA 1
+Novo cenário estático com caixas, rochas de desmoronamento, recipientes e papéis. Pixels 2x2 sem interpolação, 32 cores. Os 23 colisores acompanham paredes e bases dos objetos. A porta central superior usa E para ir ao corredor industrial.
+
+Aproxime-se dos papéis e aperte E para registrar armazenamento químico irregular e inventário incompleto. J abre o diário já existente. Chegada (210,360), checkpoint, itens, inimigos e progressão preservados. Sala de espera e Fase 2 mantêm os arquivos da base corrigida.
+
+VALIDAÇÃO
+153 recursos e 161 YY/YYP validados estruturalmente; identidades e caminhos conferidos. Testes com APIs simuladas verificaram rotas, documentos/diário sem duplicação, saída, checkpoint, explosão e queda. GameMaker/Igor não está disponível neste ambiente: não houve compilação nem execução nativa.
+
+PREVIA_SALA1.png é uma composição dos sprites reais com o jogador na escala do projeto, não uma captura de execução; os itens, inimigos e interface dinâmica não estão incluídos na prévia. Arte original e importação em art_sources_sala1.

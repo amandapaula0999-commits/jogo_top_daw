@@ -1,0 +1,16 @@
+{
+  "base": "v5.37",
+  "arquivos_da_base_alterados": [
+    "tcc.yyp",
+    "rooms/Room_Corredor_Pos/Room_Corredor_Pos.yy",
+    "objects/Obj_mapa/Draw_0.gml",
+    "objects/Obj_mapa/Create_0.gml",
+    "objects/Obj_mapa/Draw_73.gml",
+    "objects/Obj_porta/Draw_0.gml",
+    "objects/Obj_jogador/Create_0.gml",
+    "scripts/Scr_bunker/Scr_bunker.gml",
+    "scripts/Scr_fluxo_v5/Scr_fluxo_v5.gml"
+  ],
+  "arquivos_da_base_removidos": [],
+  "sprites_anteriores": "Todos idênticos byte a byte"
+}

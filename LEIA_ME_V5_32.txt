@@ -1,0 +1,4 @@
+Arquivos de Pesquisa: sala 960x640, maior que Pesquisa (600x400), com dez estantes e corredores largos.
+Cenario sprite-first, 17 colisores, cientista e guarda no fundo direito, saida superior direita com chave do cientista, duto inferior esquerdo.
+Arte criada com image_gen: estilo simples da Sala de Espera, estantes de livros, cores oliva/cinza/madeira, sem ruido; normalizada nearest-neighbor 2x2.
+Extrair tudo e abrir tcc.yyp. Nao compilado nativamente no GameMaker.

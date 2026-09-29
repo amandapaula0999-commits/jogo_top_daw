@@ -1,0 +1,52 @@
+ESCAPE THE BUNKER — V5.21 — RECEPÇÃO E CRÉDITOS TEMPORÁRIOS
+
+PROJETO COMPLETO
+Extraia a pasta inteira e abra tcc.yyp no GameMaker.
+Base: projeto integral v5.20, com Depósito e Laboratório. Os documentos de
+versões anteriores são históricos; este descreve o comportamento atual.
+
+RECEPÇÃO ACOLHEDORA
+- Cenário redesenhado em pixel art no estilo simples dos cenários da fase 2.
+- Balcão grande ao fundo, computador, teclado, papéis, pastas e caneca.
+- Máquina de café com xícaras, plantas, três relógios e banco de espera.
+- Madeira, piso claro, luz quente e janelas com vegetação indicam a superfície.
+- Arte importada como Spr_recepcao_cenario, colocada na Room_Recepcao.
+  O cenário não é desenhado por rotinas procedurais nos eventos Draw.
+- Colisões de paredes, balcão e móveis estão na Room como Obj_parede.
+- Secretária original atrás do balcão, com suas animações e quatro falas.
+- E pela frente do balcão conversa; E perto dos papéis à direita registra
+  o indício 02 no diário. Os dois pontos de interação não se sobrepõem.
+- Porta inferior retorna à fachada; porta com luz verde à direita continua
+  levando à sala de integração. Os destinos da narrativa foram preservados.
+- Entrada normal e atalho P foram ajustados ao novo tamanho da recepção.
+- A máquina de café nesta sala é decoração; a cura continua na sala de descanso.
+
+FINAL TEMPORÁRIO DA FASE 1
+Ao chegar perto da escadaria à direita, no corredor após a arena, a partida
+mostra o encerramento da fase 1 e os créditos existentes. E também funciona
+para concluir ao usar essa escada. Não carrega a fase 2 nesse percurso normal.
+As restrições de progresso/modo de teste existentes continuam sendo respeitadas.
+Depois da apresentação, Enter ou Esc retorna ao menu. O aplicativo não fecha.
+
+A FASE 2 CONTINUA NO PROJETO
+P é o atalho de testes e funciona inclusive durante os créditos. Na escadaria,
+P leva ao corredor da fase 2, preservando vida, chaves, cartão e inventário.
+O ciclo P agora também inclui Sala 10, Depósito/Sala 8 e Laboratório/Sala 11.
+Nada dessas salas foi removido. As portas e interações normais continuam lá.
+
+COMO REMOVER O FINAL TEMPORÁRIO MAIS ADIANTE
+Em scripts/Scr_bunker/Scr_bunker.gml, no início de bunker_iniciar, altere:
+    global.demo_fim_na_escadaria = true;
+para:
+    global.demo_fim_na_escadaria = false;
+Inicie uma nova partida para aplicar o valor. Isso restaura a descida com E
+para a fase 2, pois o destino real da escada continua preservado.
+
+ARTE E CONFERÊNCIA
+PREVIA_RECEPCAO_V5_21.png é uma composição com os sprites reais do projeto;
+não é uma captura do GameMaker. O original gerado está em
+art_sources_v521/recepcao.png e as orientações em ARTES_V5_21.txt.
+Os sprites do jogador, da secretária e a autoria dos créditos foram preservados.
+VALIDACAO_V5_21.txt lista as verificações estruturais e de lógica realizadas.
+Não há GameMaker instalado neste ambiente: a execução/compilação VM ou YYC
+ainda precisa ser conferida dentro da engine. Os testes usam APIs simuladas.

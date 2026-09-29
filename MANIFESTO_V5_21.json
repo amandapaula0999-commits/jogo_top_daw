@@ -1,0 +1,36 @@
+{
+  "base": "Escape_The_Bunker_v5_20_LABORATORIO_E_DEPOSITO_COMPLETO",
+  "unchanged_files": 850,
+  "changed_files": [
+    "objects/Obj_mapa/Create_0.gml",
+    "objects/Obj_mapa/Draw_0.gml",
+    "objects/Obj_mapa/Draw_64.gml",
+    "objects/Obj_mapa/Draw_73.gml",
+    "objects/Obj_mapa/Step_0.gml",
+    "objects/Obj_porta/Draw_0.gml",
+    "objects/Obj_recepcionista/Create_0.gml",
+    "objects/Obj_recepcionista/Draw_64.gml",
+    "objects/Obj_recepcionista/Step_0.gml",
+    "rooms/Room_Recepcao/Room_Recepcao.yy",
+    "scripts/Scr_bunker/Scr_bunker.gml",
+    "scripts/Scr_colisoes/Scr_colisoes.gml",
+    "scripts/Scr_fluxo_v5/Scr_fluxo_v5.gml",
+    "tcc.yyp",
+    "tools/test_debug_room_loop_v510.cjs"
+  ],
+  "added_files": [
+    "ARTES_V5_21.txt",
+    "LEIA_ME_V5_21.txt",
+    "PREVIA_RECEPCAO_V5_21.png",
+    "VALIDACAO_V5_21.txt",
+    "art_sources_v521/recepcao.png",
+    "objects/Obj_recepcao_cenario/Obj_recepcao_cenario.yy",
+    "sprites/Spr_recepcao_cenario/62dcf6fb-05fb-4b9e-a3ab-6a9bfebe9f41.png",
+    "sprites/Spr_recepcao_cenario/Spr_recepcao_cenario.yy",
+    "sprites/Spr_recepcao_cenario/layers/62dcf6fb-05fb-4b9e-a3ab-6a9bfebe9f41/e31a4a0a-cf06-4d83-bdcd-50ec82ae9abe.png",
+    "tools/preview_recepcao_v521.cjs",
+    "tools/test_final_temporario_v521.cjs",
+    "tools/test_recepcao_v521.cjs"
+  ],
+  "deleted_files": []
+}

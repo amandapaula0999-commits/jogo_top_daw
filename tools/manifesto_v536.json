@@ -1,0 +1,37 @@
+{
+  "base": "5.35",
+  "versao": "5.36",
+  "alterados": [
+    "objects/Obj_acido/Step_0.gml",
+    "objects/Obj_barril/Step_0.gml",
+    "objects/Obj_boss/Alarm_0.gml",
+    "objects/Obj_boss/Create_0.gml",
+    "objects/Obj_boss/Draw_64.gml",
+    "objects/Obj_boss/Obj_boss.yy",
+    "objects/Obj_boss/Step_0.gml",
+    "objects/Obj_jogador/Collision_Obj_boss.gml",
+    "rooms/Room_Corredor_Pos/Room_Corredor_Pos.yy",
+    "scripts/Scr_fluxo_v5/Scr_fluxo_v5.gml",
+    "tcc.yyp"
+  ],
+  "adicionados": [
+    "LEIA_PRIMEIRO_V5_36.txt",
+    "tools/preview_boss_v536.cjs",
+    "tools/test_boss_v536.cjs",
+    "art_sources_v536/boss_morto_48x32.png",
+    "art_sources_v536/boss_morto_gerado.png",
+    "art_sources_v536/PREVIA_BOSS_MORTO_V5_36.png",
+    "objects/Obj_boss_morto/Obj_boss_morto.yy",
+    "objects/Obj_boss_morto/Create_0.gml",
+    "objects/Obj_boss/CleanUp_0.gml",
+    "sprites/Spr_mascara_boss/c0fadfe1-db24-4918-9430-9606dd2b27d9.png",
+    "sprites/Spr_mascara_boss/Spr_mascara_boss.yy",
+    "sprites/Spr_boss_morto/d45890fe-86da-4835-9904-96633fa9c620.png",
+    "sprites/Spr_boss_morto/Spr_boss_morto.yy",
+    "sprites/Spr_mascara_boss/layers/c0fadfe1-db24-4918-9430-9606dd2b27d9/5d5d1d5a-07b2-4eec-bddc-7fcd893538b4.png",
+    "sprites/Spr_boss_morto/layers/d45890fe-86da-4835-9904-96633fa9c620/634887e8-62aa-4a83-b5b1-4639d9d874ca.png",
+    "tools/manifesto_v536.json",
+    "VALIDACAO_BOSS_V5_36.txt"
+  ],
+  "removidos": []
+}

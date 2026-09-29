@@ -1,0 +1,53 @@
+ESCAPE THE BUNKER — v5.40 BARRIL, ÁCIDO E CELAS
+
+Base utilizada: Escape_The_Bunker_v5_39.zip enviado por você.
+Extraia esta pasta inteira e abra tcc.yyp no GameMaker.
+
+CORREÇÃO PRINCIPAL
+O sprite Spr_barril_caindo tem seis quadros, com índices 0 a 5.
+O código antigo esperava image_index >= 6 para criar o ácido, enquanto
+Animation End travava no quadro 5 e iniciava o desaparecimento.
+Isso impedia a poça e também a reposição automática do barril.
+
+Agora o derramamento usa o último quadro real do sprite, com salvaguarda
+no evento Animation End. Ambos chamam uma função que garante uma única
+poça por queda. A poça usa o sprite original e fica acima do cenário.
+O barril deitado permanece visível até a reposição.
+
+O ácido dura 9 segundos; o barril reaparece após 10 segundos do derramamento.
+Os temporizadores usam delta_time e foram verificados a 30, 60 e 120 FPS.
+Pausa, configuração, diário, diálogo e cutscene congelam a queda e os tempos.
+O contato do boss com a poça causa os 35 pontos de dano originais e abre
+a carapaça para os ataques do jogador durante a janela já existente.
+
+ARTE DA ARENA
+- Removidas as grades das laterais das três celas; laterais agora são paredes lisas.
+- Grades mantidas apenas na frente, com altura visual maior.
+- Entradas centrais abertas e geometria física original preservada.
+- As três cadeiras têm apenas um encosto voltado à parede mais próxima.
+- Mesas, papéis, plantas, porta, jogador e sprites do boss preservados.
+- Novo fundo estático importado no sprite e no layer do GameMaker.
+  Nenhuma rotina de desenho procedural foi adicionada ao cenário.
+
+VERIFICAÇÕES
+- O teste reproduziu o erro na base 5.39: zero poças após a queda completa.
+- Após a correção, 6 grupos barril/ácido passaram, incluindo bala, cano,
+  golpe do boss, pausa, múltiplas poças, dano, reposição e duração.
+- 9 grupos de regressão do boss passaram com as colisões reais da arena 5.39,
+  incluindo perseguição/fuga de várias posições e quebra da barreira.
+- Estrutura: 173 recursos, 181 arquivos YY/YYP, 15 rooms e 260 instâncias.
+- ZIP completo conferido por CRC.
+
+LIMITAÇÃO
+Os testes executam eventos GML adaptados em Node com APIs simuladas.
+Não foi possível compilar/executar o jogo no runtime GameMaker neste ambiente.
+PREVIA_ARENA_V5_40.png é uma composição com os sprites reais, não captura de execução.
+
+ARTE E TESTES
+art_sources_v540/arena_celas_corrigidas.png — fundo final 1366 x 768.
+art_sources_v540/PROMPT_E_ORIGEM.txt — prompt e método de criação.
+tools/test_barril_acido_v540.cjs — regressão do erro corrigido.
+tools/test_boss_v540.cjs — regressão do boss com colisões da arena atual.
+tools/validate_resource_links.py e tools/validate_project.py — estrutura.
+
+Documentos e testes antigos foram mantidos como histórico do projeto.

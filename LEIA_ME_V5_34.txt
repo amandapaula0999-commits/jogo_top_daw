@@ -1,0 +1,8 @@
+v5.34 - Lagarto andando e parado nas quatro direções.
+Base v5.33, caracol preservado.
+16 quadros de caminhada e 4 quadros parados recortados em 64x64, sem redimensionamento ou suavização.
+Folha de repouso: baixo (0,0), direita (2,0), cima (1,1), esquerda (2,1); células excedentes não usadas.
+Origem (32,58), escala 1; máscara e lógica de colisão existentes preservadas.
+Folha recebida tem frente e costas visualmente semelhantes; desenhos mantidos como enviados.
+Validação estática e testes simulados; execução nativa no GameMaker não disponível.
+Extraia tudo e abra tcc.yyp.

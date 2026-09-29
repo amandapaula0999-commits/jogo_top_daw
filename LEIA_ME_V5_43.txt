@@ -1,0 +1,6 @@
+VERSÃO 5.43 - ARENA COMPACTADA
+Base: 5.42. Arena reduzida de 1366x768 para 1230x692, cerca de 10% por eixo. Jogador mantido na escala original.
+Arte refeita no estilo da sala de espera enviada: cores simples, contornos definidos e grade de pixels de 2x2, sem interpolação. Portas de aproximadamente 44 pixels de altura. Celas grandes para contenção; os acessos são menores.
+Colisões, chave, indícios, spawn, câmera da cena, bloqueio e rota de fuga reposicionados. Mecânica do boss preservada.
+PREVIA_ARENA_V5_43.png: composição dos recursos reais, não captura do runtime.
+Extrair tudo e abrir tcc.yyp. Compilação e partida no GameMaker ainda precisam de conferência.

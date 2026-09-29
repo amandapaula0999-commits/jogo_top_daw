@@ -1,0 +1,36 @@
+ESCAPE THE BUNKER — v5.37 RECEPÇÃO PROPORCIONAL
+
+Extraia a pasta inteira e abra tcc.yyp no GameMaker.
+Esta é uma cópia completa da v5.36, com a recepção ajustada.
+
+ALTERAÇÕES
+- Nova arte estática em pixel art para a recepção, com balcão menor,
+  computador, papéis, café, plantas e banco em proporção mais próxima do jogador.
+- Balcão: cerca de 159 px de largura, antes 294 px. Frente de madeira mais baixa.
+- O sprite e a escala do jogador permanecem idênticos aos da versão anterior.
+- Secretária reposicionada atrás do balcão; sua animação original foi preservada,
+  com escala 1 em vez de 1,25 para acompanhar o tamanho dos demais elementos.
+- Colisões Obj_parede acompanham o novo mobiliário; retiradas as duas antigas
+  laterais do balcão. As paredes externas e entradas mantêm suas posições.
+- Conversa e inspeção dos papéis usam pontos distintos na frente da nova mesa.
+- As quatro falas, o indício 02, o desbloqueio da porta e os destinos foram mantidos.
+- Nenhuma alteração no boss, no inventário, no jogador ou na fase 2.
+
+CONFERÊNCIA
+- 8 grupos de testes da recepção passaram: circulação, obstáculos, projéteis,
+  conversa, documentos, portas, entradas e câmera.
+- Validação estrutural: 170 recursos, 178 arquivos YY/YYP, 15 rooms e 221 instâncias.
+- PNG do sprite e seu layer têm a mesma imagem, com 640 x 427 pixels.
+- Prévia montada com sprites reais: PREVIA_RECEPCAO_V5_37.png.
+- Scripts: tools/test_recepcao_v537.cjs, tools/validate_resource_links.py
+  e tools/validate_project.py.
+
+LIMITAÇÃO DE VALIDAÇÃO
+Os testes de lógica executam GML adaptado em Node com APIs simuladas.
+Não foi possível compilar ou executar o projeto no runtime GameMaker neste ambiente.
+A prévia é uma composição dos sprites reais, não uma captura do jogo em execução.
+
+ARTE
+Imagem final e prompt em art_sources_v537. Gerada com a ferramenta integrada,
+depois importada por redução sem suavização. Não há desenho procedural novo.
+Documentos de versões antigas foram preservados apenas como histórico.

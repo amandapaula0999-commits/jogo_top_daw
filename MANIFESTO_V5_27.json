@@ -1,0 +1,28 @@
+{
+  "base": "v5.26",
+  "versao": "v5.27",
+  "modificados": [
+    "sprites/Spr_sala_manutencao_cenario/26965437-f9c8-4ab3-9c85-17052dff11de.png",
+    "sprites/Spr_sala_manutencao_cenario/e11034a1-3981-4405-b248-0b88126b3305.png",
+    "sprites/Spr_sala_manutencao_cenario/layers/26965437-f9c8-4ab3-9c85-17052dff11de/32da755b-272a-4cea-849c-6bd6135cf169.png",
+    "sprites/Spr_sala_manutencao_cenario/layers/e11034a1-3981-4405-b248-0b88126b3305/32da755b-272a-4cea-849c-6bd6135cf169.png",
+    "objects/Obj_porta/Step_0.gml",
+    "objects/Obj_porta_manutencao/Create_0.gml",
+    "objects/Obj_porta_manutencao/Draw_0.gml",
+    "objects/Obj_porta_manutencao/Step_0.gml",
+    "objects/Obj_sala_manutencao_cenario/Create_0.gml",
+    "objects/Obj_mapa/Create_0.gml",
+    "objects/Obj_mapa/Step_0.gml",
+    "rooms/Room_Manutencao_N2/Room_Manutencao_N2.yy",
+    "scripts/Scr_bunker/Scr_bunker.gml",
+    "scripts/Scr_fluxo_v5/Scr_fluxo_v5.gml"
+  ],
+  "adicionados": [
+    "PREVIA_CAMARA_FRIA_V5_27.png",
+    "ARTES_V5_27.txt",
+    "LEIA_ME_V5_27.txt",
+    "tools/test_camara_fria_v527.cjs",
+    "art_sources_v527/camara_fria.png"
+  ],
+  "removidos": []
+}

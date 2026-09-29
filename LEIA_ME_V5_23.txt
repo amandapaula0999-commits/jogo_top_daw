@@ -1,0 +1,18 @@
+ESCAPE THE BUNKER — V5.23
+Projeto completo, baseado na versão 5.22.
+Extraia toda a pasta e abra tcc.yyp no GameMaker.
+
+CORREÇÃO DA INTERFACE
+- Avisos e falas ficam na faixa superior central, entre condição e diário.
+- Portas mostram um comando compacto, sem repetir o nome numa caixa grande.
+- Mantidas a moldura, as cores e a fonte da interface existente.
+- Altura calculada pela quantidade de linhas; falas digitadas reservam o espaço do texto completo.
+- Recepção, cientistas, avisos de área, indícios, escombros e interações da fase 2 usam o mesmo posicionamento.
+- Avisos de área não se sobrepõem ao convite para falar com os NPCs.
+- Parte inferior livre das caixas de aviso, inclusive diante da porta de manutenção no corredor da fase 2.
+
+VALIDAÇÃO
+11 verificações da interface e 6 verificações do corredor aprovadas em simulação de GML.
+161 recursos e 169 arquivos YY/YYP verificados; integridade de sprites, camadas e referências aprovada.
+PREVIA_DIALOGOS_V5_23.png foi composta com os recursos reais; não é uma captura da execução do jogo.
+Não foi possível compilar ou executar no GameMaker VM/YYC neste ambiente.

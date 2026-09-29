@@ -1,0 +1,17 @@
+ESCAPE THE BUNKER — V5.28 CORREÇÃO DE REFERÊNCIAS
+Projeto completo, baseado na v5.27.
+Extraia em uma pasta nova e abra tcc.yyp.
+
+CORREÇÃO
+Os três colisores adicionados na câmara fria tinham name correto, mas %Name repetia o identificador da parede usada como modelo. Corrigidos:
+inst_CaixasFria
+inst_PrateleiraFria
+inst_HomemFria
+Cada instância agora possui %Name igual a name e à referência da ordem de criação.
+
+VERIFICAÇÕES
+Novo validador de identidades/referências verifica 153 recursos, 15 rooms e 145 instâncias.
+Aplicado à versão 5.27, detectou as três inconsistências; aplicado à 5.28, passou.
+Validação estrutural, imagens/camadas e 9 testes simulados da câmara fria passaram.
+A lógica e a arte da v5.27 foram preservadas.
+Não foi possível abrir ou compilar o projeto no GameMaker neste ambiente; a confirmação no editor ainda é necessária.

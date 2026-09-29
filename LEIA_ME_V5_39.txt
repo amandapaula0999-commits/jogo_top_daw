@@ -1,0 +1,4 @@
+Base: ZIP v5.38 enviado. Arena Room1 mantém 1366x768.
+Arte estática gerada pela ferramenta integrada: pixel art simples, paleta da sala de espera, três celas com entradas, centro livre e documentos.
+Chave interativa na cela esquerda (295,170). Documentos em (455,275) e (1045,460). Colisores acompanham grades e móveis.
+Sem compilação nativa; validação estrutural e rotas simuladas.

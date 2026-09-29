@@ -1,0 +1,48 @@
+ESCAPE THE BUNKER — v5.38 CORREDOR PÓS-PEDRAS
+
+Extraia a pasta completa e abra tcc.yyp no GameMaker.
+Base: projeto completo v5.37, preservando a recepção proporcional.
+
+NOVO CORREDOR
+- Room_Corredor_Pos recebeu uma arte estática em pixel art simples,
+  com paleta cinza/oliva, iluminação discreta, pedras à esquerda,
+  caixas pequenas, portas e escadaria à direita.
+- Room de 704 x 384 pixels. O jogador mantém seus sprites e sua escala.
+- Cenário nativo: Obj_corredor_pos_cenario e Spr_corredor_pos_cenario,
+  sem eventos Draw/Draw GUI próprios e sem reconstrução procedural do cenário.
+- 15 instâncias Obj_parede na Room para paredes, pedras, caixas e escada.
+- Acesso superior: arena do boss. Inferior: arquivos de pesquisa.
+- Escadaria: fim temporário da fase 1, mantendo o atalho P para continuar.
+- Cadáver original do boss reposicionado fora da arena; aparece após a vitória.
+- Atualizadas todas as chegadas ao corredor, atalho P e checkpoint.
+- Coordenadas de chegada da versão anterior são convertidas para posições seguras.
+- Câmera ajustada à sala compacta sem esticar o desenho.
+
+VERIFICAÇÕES
+- 6 grupos de testes do corredor: geometria, rotas, projéteis, entradas,
+  portas, progressão, migração de posições, cadáver e câmera.
+- 9 grupos de regressão do boss: combate, ácido, fuga, quebra da barreira,
+  persistência da vitória e exibição do cadáver.
+- 7 grupos dos créditos temporários e atalho P.
+- Referências: 172 recursos, 15 rooms, 237 instâncias; 180 arquivos YY/YYP válidos.
+- ZIP conferido por CRC. Arquivos anteriores preservados, salvo a integração descrita.
+
+LIMITAÇÃO
+Os testes executam GML adaptado em Node, com APIs simuladas. Não substituem
+compilação/execução VM ou YYC. GameMaker não foi executado neste ambiente.
+
+ARTE E PRÉVIA
+- art_sources_v538/corredor_pos_pedras.png: fundo final 704 x 384.
+- art_sources_v538/original_gerado.png: imagem gerada antes da importação.
+- art_sources_v538/PROMPT_E_ORIGEM.txt: referência e prompt.
+- PREVIA_CORREDOR_POS_V5_38.png: composição com jogador e cadáver reais;
+  é uma prévia dos sprites, não uma captura do jogo executado.
+
+TESTES ATUAIS
+node tools/test_corredor_pos_v538.cjs
+node tools/test_boss_v538.cjs
+node tools/test_final_temporario_v538.cjs
+python3 tools/validate_resource_links.py
+python3 tools/validate_project.py
+
+Os documentos e testes de versões anteriores permanecem como histórico.

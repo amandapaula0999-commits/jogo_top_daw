@@ -1,0 +1,3 @@
+Base v5.30. Sala de Pesquisa em pixel art simples, 600x400. Sprite estatico na Room e 9 colisores. Entrada superior esquerda, duto inferior direito, documento no chao e itens/enemies reposicionados.
+Arte gerada com image_gen: referencia Sala de Espera; bancada quimica, quadro, mesa metalica, escrivaninha com cafe/papeis/computador; contornos simples e sem texturas finas. Normalizacao nearest-neighbor em grade 2x2.
+Extrair tudo e abrir tcc.yyp. Sem compilacao nativa GameMaker.

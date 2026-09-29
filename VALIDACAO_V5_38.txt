@@ -1,0 +1,8 @@
+PASSOU: test_corredor_pos_v538.cjs — 6 grupos.
+PASSOU: test_boss_v538.cjs — 9 grupos.
+PASSOU: test_final_temporario_v538.cjs — 7 grupos.
+PASSOU: validate_resource_links.py — 172 recursos, 15 rooms, 237 instâncias.
+PASSOU: validate_project.py — 180 arquivos YY/YYP; recursos, PNGs e layers presentes.
+Prévia visual conferida com sprites reais do jogador e do cadáver.
+Método: análise estrutural e eventos GML com APIs simuladas em Node.
+GameMaker VM/YYC não executado. Testes não equivalem à compilação na engine.

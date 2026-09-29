@@ -1,0 +1,19 @@
+{
+  "base": "v5.22",
+  "versao": "v5.23",
+  "modificados": [
+    "tools/test_dialogos_v519.cjs",
+    "objects/Obj_mapa/Draw_64.gml",
+    "objects/Obj_cientista2/Draw_64.gml",
+    "objects/Obj_cientista1/Draw_64.gml",
+    "objects/Obj_recepcionista/Draw_64.gml",
+    "scripts/Scr_fluxo_v5/Scr_fluxo_v5.gml"
+  ],
+  "adicionados": [
+    "LEIA_ME_V5_23.txt",
+    "PREVIA_DIALOGOS_V5_23.png",
+    "tools/preview_dialogos_v523.cjs"
+  ],
+  "removidos": [],
+  "preservados": 876
+}

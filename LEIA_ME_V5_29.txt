@@ -1,0 +1,6 @@
+Sala 1 reduzida de 1050x680 para 525x340.
+Cenario e colisores em escala 0.5; tamanho do jogador e dos inimigos preservado.
+Spawns da queda, retorno do corredor e atalho P ajustados; documentos e itens reposicionados.
+Arte original preservada; reducao exata de blocos 2x2 para pixels 1x1, filtro desativado.
+Abra tcc.yyp apos extrair a pasta inteira.
+Sem compilacao nativa GameMaker neste ambiente.

@@ -1,0 +1,44 @@
+ESCAPE THE BUNKER — V5.19 — DIÁLOGOS DA FASE 2
+
+Base: Escape_The_Bunker_v5_18_SALA10_PE_DE_CABRA_COMPLETO.zip enviado pelo usuário.
+Extraia a pasta completa e abra tcc.yyp no GameMaker.
+
+CORREÇÃO
+Todas as mensagens contextuais da fase 2 agora usam bunker_painel, a mesma
+caixa original usada pela recepcionista na parte 1. Foram reutilizados a
+Font_de_fala, as cores, a borda dupla, os detalhes nos cantos e as margens.
+Não foi criada uma nova arte para substituir a caixa existente.
+
+Inclui:
+- Café, recuperação de vida, vida cheia, chaves e dormitório.
+- As dez falas e comandos da sala de ferramentas, incluindo o pé de cabra.
+- Portas do corredor, comandos de saída e mensagens de chave necessária.
+- Abrir/fechar a porta interna da manutenção e aviso para afastar-se.
+- Apresentações das salas da fase 2, sem outro painel de estilo diferente.
+
+O painel aparece no Draw GUI e mantém sua posição independentemente da câmera
+e do tamanho da sala. Uma única mensagem é escolhida por vez; o acesso a uma
+porta próxima tem prioridade sobre uma narração temporária. Durante pausa,
+configurações, diário, diálogo de NPC ou cutscene, os avisos ficam ocultos.
+As caixas rasterizadas antigas não são mais desenhadas. Seus arquivos foram
+preservados no projeto, sem alterar o conteúdo dos cenários ou os sprites.
+
+Os comandos continuam sendo E para interagir e coletar. Os diálogos da parte 1
+mantêm seu comportamento original com Espaço. A mudança é de apresentação:
+chaves, cura, coleta do pé de cabra e regras das portas continuam preservadas.
+
+CONFERÊNCIA
+- Estrutura: 142 recursos referenciados, 150 arquivos YY/YYP válidos.
+- tools/test_dialogos_v519.cjs: 9 testes de mensagens, painel, exclusividade,
+  limites de tela, ocultação em menus e preservação do fluxo da parte 1.
+- tools/test_sala10_v518.cjs: 9 testes de coleta, inventário e acesso.
+- tools/test_descanso_v515.cjs: 8 testes do descanso e saída.
+- tools/test_manutencao_v513.cjs: 9 testes da manutenção.
+- tools/test_corredor_v516.cjs: 6 testes dos acessos do corredor.
+- PREVIA_DIALOGOS_V5_19.png: comparação visual renderizada com o código do
+  painel original e o atlas real de Font_de_fala. Não é captura do GameMaker.
+- ZIP completo comparado ao arquivo v5.18 e conferido por CRC.
+
+Os testes usam trechos GML com APIs GameMaker simuladas. Não foi possível
+compilar ou executar no runtime VM/YYC, pois o GameMaker não está instalado
+neste ambiente. A prévia não substitui um teste jogável dentro da engine.

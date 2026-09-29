@@ -1,0 +1,4 @@
+v5.35 - Camera da apresentacao do boss corrigida.
+Jogador -> boss -> golpe completo -> porta/bloqueio -> jogador.
+Caracol reduzido de 0.55 para 0.45 (18%); escala do protagonista preservada. Lagarto preservado.
+Base v5.34. Testes simulados e validacao estrutural; sem execucao nativa GameMaker.

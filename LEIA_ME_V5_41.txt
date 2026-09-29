@@ -1,0 +1,35 @@
+ESCAPE THE BUNKER — V5.41 — CORREDOR DA FASE 2
+
+COMO ABRIR
+Extraia esta pasta inteira e abra tcc.yyp no GameMaker.
+
+ALTERAÇÕES
+O corredor da fase 2 recebeu uma nova arte estática, com paredes verde-oliva,
+piso cinza e pixel art simples seguindo o corredor da fase 1 após a barreira.
+A estrutura está inteira, sem pedras nem entulho. Caixas e barril ficam nas
+extremidades, com passagem central livre.
+
+Os 13 colisores Obj_parede foram conferidos; 10 tiveram posição ou tamanho
+ajustados à arte. As cinco portas existentes, seus destinos e interações foram
+preservados. A arte usa o recurso já registrado Spr_corredor_n2_cenario.
+O jogador original e as correções do barril/ácido da v5.40 foram preservados.
+
+CONFERÊNCIA
+6 grupos de testes do corredor passaram em simulação de eventos GML:
+- instâncias e colisores da room;
+- caminhos até as cinco portas e bloqueios das caixas/barril;
+- separação dos acessos e pontos de retorno;
+- interação E, vida e inventário nas portas de descanso e depósito;
+- escadaria e checkpoint;
+- limites e acompanhamento da câmera.
+Validadores estruturais: 173 recursos, 15 rooms, 260 instâncias e 181 YY/YYP.
+Conferidas imagens principais, layers e referências.
+Comparação com v5.40: nenhum arquivo removido; somente a room do corredor e
+as duas cópias do PNG desse cenário foram modificadas entre os arquivos
+existentes. Documentação, fontes da arte e teste desta versão foram adicionados.
+
+LIMITAÇÃO
+Esta versão não foi compilada ou executada no GameMaker neste ambiente.
+Os testes são simulações e verificações estruturais; não substituem o teste
+no runtime. PREVIA_CORREDOR_FASE2_V5_41.png é uma composição de conferência
+com os sprites e posições da room, não uma captura do jogo rodando.

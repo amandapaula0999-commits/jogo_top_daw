@@ -1,0 +1,10 @@
+ESCAPE THE BUNKER — V5.25
+Projeto completo, baseado na v5.24.
+Extraia tudo e abra tcc.yyp.
+
+CORREÇÃO
+O nome [E] SALA DE ESPERA agora fica centralizado acima da porta lateral da recepção, respeitando a borda da tela. A antiga margem fixa que empurrava o texto para a esquerda foi substituída pela largura real do texto. O texto termina acima do topo da porta, sem sobrepor a passagem.
+
+VALIDAÇÃO
+Posição conferida com a fonte original e as coordenadas reais da porta. Estrutura e recursos verificados. Prévia composta a partir dos recursos reais, não captura do jogo.
+Não foi possível compilar nem executar no GameMaker VM/YYC neste ambiente.

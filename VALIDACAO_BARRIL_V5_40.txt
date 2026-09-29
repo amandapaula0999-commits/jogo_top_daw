@@ -1,0 +1,7 @@
+OK: sprite real de 6 quadros derrama exatamente uma poça ao terminar a queda
+OK: Animation End funciona como salvaguarda sem depender do próximo Step
+OK: bala, cano e impacto do boss derrubam uma vez; poça real causa -35 e abre carapaça
+OK: poça vive 9s, barril deitado persiste e reposição permite novo ciclo a 30/60/120 FPS
+OK: pausa/menus/diálogo congelam a queda e impedem derramamento antecipado
+OK: quatro barris mantêm poças independentes; reposição não apaga ácido de outro barril
+6 grupos barril/ácido aprovados (GML simulado).
