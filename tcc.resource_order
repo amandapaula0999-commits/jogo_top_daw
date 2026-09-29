@@ -1,0 +1,15 @@
+{
+  "FolderOrderSettings":[
+    {"name":"caracol","order":1,"path":"folders/sprites/inimigo/caracol.yy",},
+    {"name":"lagarto","order":2,"path":"folders/sprites/inimigo/lagarto.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"Spr_lagarto_andando_cima","order":1,"path":"sprites/Spr_lagarto_andando_cima/Spr_lagarto_andando_cima.yy",},
+    {"name":"Spr_lagarto_andando_direita","order":7,"path":"sprites/Spr_lagarto_andando_direita/Spr_lagarto_andando_direita.yy",},
+    {"name":"Spr_lagarto_andando_esquerda","order":2,"path":"sprites/Spr_lagarto_andando_esquerda/Spr_lagarto_andando_esquerda.yy",},
+    {"name":"Spr_lagarto_parado_baixo","order":3,"path":"sprites/Spr_lagarto_parado_baixo/Spr_lagarto_parado_baixo.yy",},
+    {"name":"Spr_lagarto_parado_cima","order":4,"path":"sprites/Spr_lagarto_parado_cima/Spr_lagarto_parado_cima.yy",},
+    {"name":"Spr_lagarto_parado_direita","order":6,"path":"sprites/Spr_lagarto_parado_direita/Spr_lagarto_parado_direita.yy",},
+    {"name":"Spr_lagarto_parado_esquerda","order":5,"path":"sprites/Spr_lagarto_parado_esquerda/Spr_lagarto_parado_esquerda.yy",},
+  ],
+}

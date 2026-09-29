@@ -1,0 +1,8 @@
+ESCAPE THE BUNKER — VERSÃO 5.43 — PROJETO COMPLETO LIMPO
+
+Extraia toda esta pasta e abra tcc.yyp no GameMaker.
+
+Limpeza de organização: removidos históricos locais, artes-fonte extras, prévias, ferramentas de geração/testes e relatórios acumulados de versões anteriores.
+Os recursos do jogo, códigos GML, mapas e configurações foram preservados byte a byte. Nenhuma mecânica ou arte em uso foi alterada.
+
+Verificação: referências de recursos, arquivos de eventos, imagens dos sprites, áudio e integridade do ZIP conferidos. Esta limpeza não foi compilada nem executada no GameMaker neste ambiente.
